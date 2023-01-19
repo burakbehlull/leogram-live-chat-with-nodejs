@@ -18,6 +18,13 @@ const featuresTemp=[{
 
 exports.getIndex = (req, res)=>{
   res.render('index',{
+    page: "home",
     featuresTemp
   })
+}
+
+exports.about = (req, res) =>{
+res.render('index',{
+    page: 'authPages/sign-in'
+});
 }

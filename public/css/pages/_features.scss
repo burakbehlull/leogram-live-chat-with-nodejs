@@ -1,0 +1,25 @@
+.features{
+    padding-top: 30px;
+    .features-boxes{
+        
+        padding-top: 15px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 25px;
+        .features-box{
+            padding: 24px;
+            border-radius: 10px;
+            height: 130px;
+            width: 230px;
+            background-color: #F2F2F2;
+            img{
+                border-radius: 8px;
+                display: inline-block;
+                max-width: 40px;
+            }
+            h3,p{
+                text-align: left;
+            }
+        }
+    }
+}

@@ -4,5 +4,6 @@ const router = express.Router();
 const pagesController = require('../controllers/pagesController.js')
 
 router.route('/').get(pagesController.getIndex)
+router.get('/sign-in', pagesController.about);
 
 module.exports = router

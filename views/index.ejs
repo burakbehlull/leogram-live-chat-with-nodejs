@@ -5,14 +5,12 @@
   </head>
   <body>
     
-    <div class="container">
-      <%- include('partials/_navbar.ejs') %> 
-      <div class="dashboard">
-        <%- include('pages/dashboard-header.ejs') %> 
-        <%- include('pages/dashboard-body.ejs') %> 
-        <%- include('pages/features.ejs') %> 
-      </div><!-- dashboard -->
-    </div><!-- container -->
-    
+      <div class="container">
+        <%- include('partials/_navbar.ejs') %> 
+        <div class="dashboard">
+          <%- include('pages/dashboard-header.ejs') %> 
+          <%- include(page) %>
+        </div><!-- dashboard -->
+      </div><!-- container -->
   </body>
 </html>

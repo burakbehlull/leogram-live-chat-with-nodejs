@@ -1,0 +1,6 @@
+@mixin imgAddNav($link, $bgs){
+    background-image: url($link);
+    background-repeat: no-repeat;
+    background-size: $bgs; 
+    background-position: left;
+}

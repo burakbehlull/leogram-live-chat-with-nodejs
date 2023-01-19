@@ -153,7 +153,8 @@ h1, h2, h3, h4, h5, p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: red;
+  border-bottom: 1px solid #F2F2F2;
+  padding-bottom: 7px;
 }
 .container .dashboard .dashboard-header form input {
   border: 2px solid #F2F2F2;
@@ -190,7 +191,7 @@ h1, h2, h3, h4, h5, p {
   max-width: 50px;
 }
 .container .dashboard .dashboard-body {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .container .dashboard .dashboard-body .header-img {
   display: flex;

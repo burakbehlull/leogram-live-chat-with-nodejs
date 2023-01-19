@@ -1,0 +1,122 @@
+.navbar{
+    border-right: 1px solid #F2F2F2;
+    flex: 20%;
+    justify-content: center;
+    h1{
+        .leo{
+            color:#091322;
+        }
+        .gram{
+            color: #ad241b;
+        }
+    }
+
+
+
+    .navbar-buttons{
+        padding-top: 55px;
+        hr{
+            padding-top: 20px;
+            border-bottom: 1px solid #F2F2F2;
+        }
+        ul{
+            padding-top: 10px;
+            list-style-type: none;
+            
+            li{
+                padding-top: 30px;
+
+                a{
+                    padding: 10px 90px 10px 20px;
+                    padding-left: 50px;
+                    text-decoration: none;
+                    
+                    color: #091322;
+                    font-weight: 400;
+                    background-size: 35px;
+                    &[class~="home"] {
+                        @include imgAddNav('/img/dashicon.png', 15);
+                        -webkit-transition: all 900ms ease;
+                        -o-transition-property: all;
+                        &:hover{
+                            background-image: url('/img/dashiconHover.png');
+                        }
+                    }
+                    &[class~="chat"]{
+                        @include imgAddNav('/img/chat-inherit.png', 15);
+                        -webkit-transition: all 900ms ease;
+                        -o-transition-property: all;
+                        &:hover{
+                            background-image: url('/img/chat-red.png');
+                        }
+                    }
+                    &[class~="cupcake"]{
+                        @include imgAddNav('/img/cupcake.png', 15);
+                        -webkit-transition: all 900ms ease;
+                        -o-transition-property: all;
+                        &:hover{
+                            background-size: 40px;
+                        }
+                    }
+
+                    &[class~="about"]{
+                        @include imgAddNav('/img/info-dark.png', 15);
+                        -webkit-transition: all 900ms ease;
+                        -o-transition-property: all;
+                        &:hover{
+                            background-image: url('/img/info-red.png');
+                        }
+                    }
+
+                    &[class~="logout"]{
+                        @include imgAddNav('/img/logout.png', 15);
+                        -webkit-transition: all 900ms ease;
+                        -o-transition-property: all;
+                        &:hover{
+                            background-image: url('/img/logoutHover.png');
+                            background-size: 40px;
+                        }
+                    }
+
+                    
+                    &[class~="login"]{
+                        @include imgAddNav('/img/login.png', 15);
+                        -webkit-transition: all 900ms ease;
+                        -o-transition-property: all;
+                        &:hover{
+                            background-size: 40px;
+                        }
+                    }
+
+                    &[class~="sign-in"]{
+                        @include imgAddNav('/img/sign-in.png', 15);
+                        -webkit-transition: all 900ms ease;
+                        -o-transition-property: all;
+                        &:hover{
+                            background-size: 40px;
+                        }
+                    }
+
+                    &[class~="active"]{
+                       border-left: 4px solid #d82215;
+                       border-radius: 2px;
+                       -webkit-transition: all 1500ms ease;
+                       -o-transition-property: all;
+                    }
+
+                 
+                    padding-left: 50px;
+
+
+                    &:hover{
+                        background-color: #F2F2F2;
+                        color: #ad241b;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+}

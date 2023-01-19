@@ -1,0 +1,50 @@
+.dashboard-header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #F2F2F2;
+    padding-bottom: 7px;
+    form{
+        input{
+            border: 2px solid #F2F2F2;
+            font-weight: 500;
+            border-radius: 10px;
+            font-size: 15px;
+            height: 35px;
+            width: 400px;
+            padding-left: 35px;
+            outline: 0;
+            background-image: url('/img/searchx50.png');
+            background-size: 27px;
+            background-repeat: no-repeat;
+            background-position: 5px;
+            &:focus{
+                
+                border-color: #FFFFFF;
+                box-shadow: 1px 0px 15px #6ca2f1;
+            }
+        }
+    }
+    .profile-part{
+        display: flex;
+        justify-content: inherit;
+        align-items: inherit;
+        h3{
+            font-weight: 400;
+            font-size: 15px;
+            padding-right: 16px;
+            padding-bottom: 3px;
+        }
+        .profile{
+            
+
+            
+            img[id~="user-profile"]{
+                border: 3px solid #091322;
+                border-radius: 30px;
+                max-width: 50px;
+            }
+        }
+    }
+}

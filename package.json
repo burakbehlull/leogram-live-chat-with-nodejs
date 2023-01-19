@@ -6,12 +6,23 @@
   "scripts": {
     "start": "nodemon app.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/31000s/leogram-live-chat-with-nodejs.git"
+  },
   "keywords": [],
+  "bugs": {
+    "url": "https://github.com/31000s/leogram-live-chat-with-nodejs/issues"
+  },
+  "homepage": "https://github.com/31000s/leogram-live-chat-with-nodejs/#readme",
   "author": "31000s <burakyabgu@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "connect-mongo": "^4.6.0",
+    "bcrypt": "^5.1.0",
     "mongoose": "^6.8.4"
   },
   "devDependencies": {
