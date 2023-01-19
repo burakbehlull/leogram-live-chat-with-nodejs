@@ -64,12 +64,20 @@ h1, h2, h3, h4, h5, p {
 }
 .container .dashboard .dashboard-header form input {
   border: 2px solid #F2F2F2;
+  font-weight: 500;
   border-radius: 10px;
-  padding: 5px;
+  font-size: 15px;
+  height: 35px;
+  width: 400px;
+  padding-left: 35px;
   outline: 0;
+  background-image: url("../img/searchx50.png");
+  background-size: 27px;
+  background-repeat: no-repeat;
+  background-position: 5px;
 }
 .container .dashboard .dashboard-header form input:focus {
-  border-color: red;
+  border-color: #6ca2f1;
 }
 .container .dashboard .dashboard-body {
   padding-top: 30px;
@@ -126,10 +134,10 @@ h1, h2, h3, h4, h5, p {
     font-size: 40px;
     color: white;
     padding-top: 30px;
-    margin-right: 700px;
+    margin-right: 400px;
   }
   .container .dashboard .dashboard-body .header-img .header-text ul {
-    margin-right: 700px;
+    margin-right: 400px;
     padding-top: 23px;
   }
 }
