@@ -53,4 +53,83 @@ h1, h2, h3, h4, h5, p {
 .container .navbar .navbar-buttons ul li a:hover {
   padding: 10px;
   background-color: #ad241b;
+}
+.container .dashboard {
+  margin-right: 30px;
+  margin-left: 30px;
+  flex: 80%;
+}
+.container .dashboard .dashboard-header {
+  color: red;
+}
+.container .dashboard .dashboard-header form input {
+  border: 2px solid #F2F2F2;
+  border-radius: 10px;
+  padding: 5px;
+  outline: 0;
+}
+.container .dashboard .dashboard-header form input:focus {
+  border-color: red;
+}
+.container .dashboard .dashboard-body {
+  padding-top: 30px;
+}
+.container .dashboard .dashboard-body .header-img {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 270px;
+  border-radius: 15px;
+  background-color: #091322;
+}
+.container .dashboard .dashboard-body .header-img .header-text {
+  position: fixed;
+}
+.container .dashboard .dashboard-body .header-img .header-text p, .container .dashboard .dashboard-body .header-img .header-text h1 {
+  margin-right: 580px;
+}
+.container .dashboard .dashboard-body .header-img .header-text h1 {
+  font-size: 40px;
+  color: white;
+  padding-top: 45px;
+  letter-spacing: 2px;
+}
+.container .dashboard .dashboard-body .header-img .header-text p {
+  padding-top: 5px;
+  font-size: 20px;
+  color: white;
+}
+.container .dashboard .dashboard-body .header-img .header-text ul {
+  list-style-type: none;
+  padding-top: 70px;
+}
+.container .dashboard .dashboard-body .header-img .header-text ul li a {
+  border-radius: 16px;
+  font-size: 14px;
+  padding: 13px;
+  cursor: pointer;
+  background-color: #ad241b;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 900ms ease;
+  -o-transition-property: all;
+}
+.container .dashboard .dashboard-body .header-img .header-text ul li a:hover {
+  background-color: #b8241a;
+  border-radius: 26px;
+}
+@media only screen and (max-width: 1000px) {
+  .container .dashboard .dashboard-body .header-img .header-text {
+    position: relative;
+  }
+  .container .dashboard .dashboard-body .header-img .header-text h1 {
+    font-size: 40px;
+    color: white;
+    padding-top: 30px;
+    margin-right: 700px;
+  }
+  .container .dashboard .dashboard-body .header-img .header-text ul {
+    margin-right: 700px;
+    padding-top: 23px;
+  }
 }/*# sourceMappingURL=style.css.map */
