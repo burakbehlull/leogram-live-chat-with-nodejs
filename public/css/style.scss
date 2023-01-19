@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@100;400&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Joan', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: white;
+}
+
+h1,h2,h3,h4,h5,p{
+    color: #091322;
+}
+
+.container{
+    display: flex;
+    .navbar{
+        flex: 20%;
+        justify-content: center;
+        h1{
+            .leo{
+                color:#091322;
+            }
+            .gram{
+                color: #ad241b;
+            }
+        }
+
+
+        .navbar-buttons{
+            padding-top: 55px;
+            ul{
+                padding-top: 20px;
+                list-style-type: none;
+                li{
+                    // padding-top: 15px;
+                    width: 100%;
+                    a{
+                        width: 100%;
+                        height: 100%;
+                        padding: 10px;
+                        text-decoration: none;
+                        color: #091322;
+                        font-weight: bold;
+                        &:hover{
+                            padding: 10px;
+                            background-color: #ad241b;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
