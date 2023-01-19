@@ -33,27 +33,64 @@ h1,h2,h3,h4,h5,p{
             }
         }
 
+        @mixin imgAddNav($link, $bgs){
+            background-image: url($link);
+            background-repeat: no-repeat;
+            background-size: $bgs; 
+            background-position: left;
+        }
 
         .navbar-buttons{
             padding-top: 55px;
             ul{
-                padding-top: 20px;
+                padding-top: 10px;
                 list-style-type: none;
                 li{
-                    // padding-top: 15px;
-                    width: 100%;
+                    padding-top: 30px;
+
                     a{
-                        width: 100%;
-                        height: 100%;
-                        padding: 10px;
+                        padding: 10px 90px 10px 20px;
+                        padding-left: 50px;
                         text-decoration: none;
+                        
                         color: #091322;
-                        font-weight: bold;
-                        &:hover{
-                            padding: 10px;
-                            background-color: #ad241b;
+                        font-weight: 400;
+                        background-size: 35px;
+                        &[class="home"]{
+                            @include imgAddNav('../img/dashicon.png', 15);
+                            -webkit-transition: all 900ms ease;
+                            -o-transition-property: all;
+                            &:hover{
+                                background-image: url('../img/dashiconHover.png');
+                            }
                         }
+                        &[class="chat"]{
+                            @include imgAddNav('../img/chat-inherit.png', 15);
+                            -webkit-transition: all 900ms ease;
+                            -o-transition-property: all;
+                            &:hover{
+                                background-image: url('../img/chat-red.png');
+                            }
+                        }
+
+                        &[class="about"]{
+                            @include imgAddNav('../img/info-dark.png', 15);
+                            -webkit-transition: all 900ms ease;
+                            -o-transition-property: all;
+                            &:hover{
+                                background-image: url('../img/info-red.png');
+                            }
+                        }
+                        padding-left: 50px;
+
+
+                        &:hover{
+                            background-color: #F2F2F2;
+                            color: #ad241b;
+                        }
+
                     }
+
                 }
             }
         }
@@ -69,7 +106,6 @@ h1,h2,h3,h4,h5,p{
             form{
                 input{
                     border: 2px solid #F2F2F2;
-                    // color: #ad241b;
                     font-weight: 500;
                     border-radius: 10px;
                     font-size: 15px;
@@ -83,7 +119,8 @@ h1,h2,h3,h4,h5,p{
                     background-position: 5px;
                     &:focus{
                         
-                        border-color: #6ca2f1
+                        border-color: #FFFFFF;
+                        box-shadow: 1px 0px 15px #6ca2f1;
                     }
                 }
             }

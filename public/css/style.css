@@ -36,23 +36,57 @@ h1, h2, h3, h4, h5, p {
   padding-top: 55px;
 }
 .container .navbar .navbar-buttons ul {
-  padding-top: 20px;
+  padding-top: 10px;
   list-style-type: none;
 }
 .container .navbar .navbar-buttons ul li {
-  width: 100%;
+  padding-top: 30px;
 }
 .container .navbar .navbar-buttons ul li a {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
+  padding: 10px 90px 10px 20px;
+  padding-left: 50px;
   text-decoration: none;
   color: #091322;
-  font-weight: bold;
+  font-weight: 400;
+  background-size: 35px;
+  padding-left: 50px;
+}
+.container .navbar .navbar-buttons ul li a[class=home] {
+  background-image: url("../img/dashicon.png");
+  background-repeat: no-repeat;
+  background-size: 15;
+  background-position: left;
+  -webkit-transition: all 900ms ease;
+  -o-transition-property: all;
+}
+.container .navbar .navbar-buttons ul li a[class=home]:hover {
+  background-image: url("../img/dashiconHover.png");
+}
+.container .navbar .navbar-buttons ul li a[class=chat] {
+  background-image: url("../img/chat-inherit.png");
+  background-repeat: no-repeat;
+  background-size: 15;
+  background-position: left;
+  -webkit-transition: all 900ms ease;
+  -o-transition-property: all;
+}
+.container .navbar .navbar-buttons ul li a[class=chat]:hover {
+  background-image: url("../img/chat-red.png");
+}
+.container .navbar .navbar-buttons ul li a[class=about] {
+  background-image: url("../img/info-dark.png");
+  background-repeat: no-repeat;
+  background-size: 15;
+  background-position: left;
+  -webkit-transition: all 900ms ease;
+  -o-transition-property: all;
+}
+.container .navbar .navbar-buttons ul li a[class=about]:hover {
+  background-image: url("../img/info-red.png");
 }
 .container .navbar .navbar-buttons ul li a:hover {
-  padding: 10px;
-  background-color: #ad241b;
+  background-color: #F2F2F2;
+  color: #ad241b;
 }
 .container .dashboard {
   margin-right: 30px;
@@ -77,7 +111,8 @@ h1, h2, h3, h4, h5, p {
   background-position: 5px;
 }
 .container .dashboard .dashboard-header form input:focus {
-  border-color: #6ca2f1;
+  border-color: #FFFFFF;
+  box-shadow: 1px 0px 15px #6ca2f1;
 }
 .container .dashboard .dashboard-body {
   padding-top: 30px;
