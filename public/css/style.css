@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, p {
   background-size: 35px;
   padding-left: 50px;
 }
-.container .navbar .navbar-buttons ul li a[class=home] {
+.container .navbar .navbar-buttons ul li a[class~=home] {
   background-image: url("../img/dashicon.png");
   background-repeat: no-repeat;
   background-size: 15;
@@ -59,10 +59,10 @@ h1, h2, h3, h4, h5, p {
   -webkit-transition: all 900ms ease;
   -o-transition-property: all;
 }
-.container .navbar .navbar-buttons ul li a[class=home]:hover {
+.container .navbar .navbar-buttons ul li a[class~=home]:hover {
   background-image: url("../img/dashiconHover.png");
 }
-.container .navbar .navbar-buttons ul li a[class=chat] {
+.container .navbar .navbar-buttons ul li a[class~=chat] {
   background-image: url("../img/chat-inherit.png");
   background-repeat: no-repeat;
   background-size: 15;
@@ -70,10 +70,10 @@ h1, h2, h3, h4, h5, p {
   -webkit-transition: all 900ms ease;
   -o-transition-property: all;
 }
-.container .navbar .navbar-buttons ul li a[class=chat]:hover {
+.container .navbar .navbar-buttons ul li a[class~=chat]:hover {
   background-image: url("../img/chat-red.png");
 }
-.container .navbar .navbar-buttons ul li a[class=about] {
+.container .navbar .navbar-buttons ul li a[class~=about] {
   background-image: url("../img/info-dark.png");
   background-repeat: no-repeat;
   background-size: 15;
@@ -81,8 +81,14 @@ h1, h2, h3, h4, h5, p {
   -webkit-transition: all 900ms ease;
   -o-transition-property: all;
 }
-.container .navbar .navbar-buttons ul li a[class=about]:hover {
+.container .navbar .navbar-buttons ul li a[class~=about]:hover {
   background-image: url("../img/info-red.png");
+}
+.container .navbar .navbar-buttons ul li a[class~=active] {
+  border-left: 4px solid #d82215;
+  border-radius: 2px;
+  -webkit-transition: all 1500ms ease;
+  -o-transition-property: all;
 }
 .container .navbar .navbar-buttons ul li a:hover {
   background-color: #F2F2F2;
@@ -94,6 +100,9 @@ h1, h2, h3, h4, h5, p {
   flex: 80%;
 }
 .container .dashboard .dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: red;
 }
 .container .dashboard .dashboard-header form input {
@@ -113,6 +122,11 @@ h1, h2, h3, h4, h5, p {
 .container .dashboard .dashboard-header form input:focus {
   border-color: #FFFFFF;
   box-shadow: 1px 0px 15px #6ca2f1;
+}
+.container .dashboard .dashboard-header .profile-part .profile img {
+  border: 3px solid #091322;
+  border-radius: 30px;
+  max-width: 50px;
 }
 .container .dashboard .dashboard-body {
   padding-top: 30px;

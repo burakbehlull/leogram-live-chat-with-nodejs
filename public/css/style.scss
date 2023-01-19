@@ -56,7 +56,7 @@ h1,h2,h3,h4,h5,p{
                         color: #091322;
                         font-weight: 400;
                         background-size: 35px;
-                        &[class="home"]{
+                        &[class~="home"] {
                             @include imgAddNav('../img/dashicon.png', 15);
                             -webkit-transition: all 900ms ease;
                             -o-transition-property: all;
@@ -64,7 +64,7 @@ h1,h2,h3,h4,h5,p{
                                 background-image: url('../img/dashiconHover.png');
                             }
                         }
-                        &[class="chat"]{
+                        &[class~="chat"]{
                             @include imgAddNav('../img/chat-inherit.png', 15);
                             -webkit-transition: all 900ms ease;
                             -o-transition-property: all;
@@ -73,7 +73,7 @@ h1,h2,h3,h4,h5,p{
                             }
                         }
 
-                        &[class="about"]{
+                        &[class~="about"]{
                             @include imgAddNav('../img/info-dark.png', 15);
                             -webkit-transition: all 900ms ease;
                             -o-transition-property: all;
@@ -81,6 +81,15 @@ h1,h2,h3,h4,h5,p{
                                 background-image: url('../img/info-red.png');
                             }
                         }
+
+                        &[class~="active"]{
+                           border-left: 4px solid #d82215;
+                           border-radius: 2px;
+                           -webkit-transition: all 1500ms ease;
+                           -o-transition-property: all;
+                        }
+
+                     
                         padding-left: 50px;
 
 
@@ -102,6 +111,9 @@ h1,h2,h3,h4,h5,p{
         margin-left: 30px;
         flex: 80%;
         .dashboard-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             color: red;
             form{
                 input{
@@ -121,6 +133,17 @@ h1,h2,h3,h4,h5,p{
                         
                         border-color: #FFFFFF;
                         box-shadow: 1px 0px 15px #6ca2f1;
+                    }
+                }
+            }
+            .profile-part{
+                .profile{
+                    
+                    
+                    img{
+                        border: 3px solid #091322;
+                        border-radius: 30px;
+                        max-width: 50px;
                     }
                 }
             }
