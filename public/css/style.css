@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, p {
   padding-left: 50px;
 }
 .container .navbar .navbar-buttons ul li a[class~=home] {
-  background-image: url("../img/dashicon.png");
+  background-image: url("/img/dashicon.png");
   background-repeat: no-repeat;
   background-size: 15;
   background-position: left;
@@ -65,10 +65,10 @@ h1, h2, h3, h4, h5, p {
   -o-transition-property: all;
 }
 .container .navbar .navbar-buttons ul li a[class~=home]:hover {
-  background-image: url("../img/dashiconHover.png");
+  background-image: url("/img/dashiconHover.png");
 }
 .container .navbar .navbar-buttons ul li a[class~=chat] {
-  background-image: url("../img/chat-inherit.png");
+  background-image: url("/img/chat-inherit.png");
   background-repeat: no-repeat;
   background-size: 15;
   background-position: left;
@@ -76,10 +76,21 @@ h1, h2, h3, h4, h5, p {
   -o-transition-property: all;
 }
 .container .navbar .navbar-buttons ul li a[class~=chat]:hover {
-  background-image: url("../img/chat-red.png");
+  background-image: url("/img/chat-red.png");
+}
+.container .navbar .navbar-buttons ul li a[class~=cupcake] {
+  background-image: url("/img/cupcake.png");
+  background-repeat: no-repeat;
+  background-size: 15;
+  background-position: left;
+  -webkit-transition: all 900ms ease;
+  -o-transition-property: all;
+}
+.container .navbar .navbar-buttons ul li a[class~=cupcake]:hover {
+  background-size: 40px;
 }
 .container .navbar .navbar-buttons ul li a[class~=about] {
-  background-image: url("../img/info-dark.png");
+  background-image: url("/img/info-dark.png");
   background-repeat: no-repeat;
   background-size: 15;
   background-position: left;
@@ -87,10 +98,10 @@ h1, h2, h3, h4, h5, p {
   -o-transition-property: all;
 }
 .container .navbar .navbar-buttons ul li a[class~=about]:hover {
-  background-image: url("../img/info-red.png");
+  background-image: url("/img/info-red.png");
 }
 .container .navbar .navbar-buttons ul li a[class~=logout] {
-  background-image: url("../img/logout.png");
+  background-image: url("/img/logout.png");
   background-repeat: no-repeat;
   background-size: 15;
   background-position: left;
@@ -98,11 +109,11 @@ h1, h2, h3, h4, h5, p {
   -o-transition-property: all;
 }
 .container .navbar .navbar-buttons ul li a[class~=logout]:hover {
-  background-image: url("../img/logoutHover.png");
+  background-image: url("/img/logoutHover.png");
   background-size: 40px;
 }
 .container .navbar .navbar-buttons ul li a[class~=login] {
-  background-image: url("../img/login.png");
+  background-image: url("/img/login.png");
   background-repeat: no-repeat;
   background-size: 15;
   background-position: left;
@@ -113,7 +124,7 @@ h1, h2, h3, h4, h5, p {
   background-size: 40px;
 }
 .container .navbar .navbar-buttons ul li a[class~=sign-in] {
-  background-image: url("../img/sign-in.png");
+  background-image: url("/img/sign-in.png");
   background-repeat: no-repeat;
   background-size: 15;
   background-position: left;
@@ -153,7 +164,7 @@ h1, h2, h3, h4, h5, p {
   width: 400px;
   padding-left: 35px;
   outline: 0;
-  background-image: url("../img/searchx50.png");
+  background-image: url("/img/searchx50.png");
   background-size: 27px;
   background-repeat: no-repeat;
   background-position: 5px;

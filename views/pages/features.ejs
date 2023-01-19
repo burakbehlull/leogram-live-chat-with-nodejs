@@ -1,0 +1,17 @@
+<div class="features">
+    <h2 class="features-title">Özellikler</h2>
+
+    <div class="features-boxes">
+
+      <% featuresTemp.forEach(function(featuresObj, i){ %>
+        <div class="features-box">
+          <img src="/img/<%= featuresObj.image %>" alt="">
+          <h3><%= featuresObj.baslik %></h3>
+          <p>Paragraf</p>
+        </div>
+      <% }) %>
+     
+      
+
+    </div><!-- features-boxes -->
+  </div><!-- features -->

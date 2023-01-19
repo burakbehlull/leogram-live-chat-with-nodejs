@@ -63,44 +63,52 @@ h1,h2,h3,h4,h5,p{
                         font-weight: 400;
                         background-size: 35px;
                         &[class~="home"] {
-                            @include imgAddNav('../img/dashicon.png', 15);
+                            @include imgAddNav('/img/dashicon.png', 15);
                             -webkit-transition: all 900ms ease;
                             -o-transition-property: all;
                             &:hover{
-                                background-image: url('../img/dashiconHover.png');
+                                background-image: url('/img/dashiconHover.png');
                             }
                         }
                         &[class~="chat"]{
-                            @include imgAddNav('../img/chat-inherit.png', 15);
+                            @include imgAddNav('/img/chat-inherit.png', 15);
                             -webkit-transition: all 900ms ease;
                             -o-transition-property: all;
                             &:hover{
-                                background-image: url('../img/chat-red.png');
+                                background-image: url('/img/chat-red.png');
+                            }
+                        }
+                        &[class~="cupcake"]{
+                            @include imgAddNav('/img/cupcake.png', 15);
+                            -webkit-transition: all 900ms ease;
+                            -o-transition-property: all;
+                            &:hover{
+                                background-size: 40px;
                             }
                         }
 
                         &[class~="about"]{
-                            @include imgAddNav('../img/info-dark.png', 15);
+                            @include imgAddNav('/img/info-dark.png', 15);
                             -webkit-transition: all 900ms ease;
                             -o-transition-property: all;
                             &:hover{
-                                background-image: url('../img/info-red.png');
+                                background-image: url('/img/info-red.png');
                             }
                         }
 
                         &[class~="logout"]{
-                            @include imgAddNav('../img/logout.png', 15);
+                            @include imgAddNav('/img/logout.png', 15);
                             -webkit-transition: all 900ms ease;
                             -o-transition-property: all;
                             &:hover{
-                                background-image: url('../img/logoutHover.png');
+                                background-image: url('/img/logoutHover.png');
                                 background-size: 40px;
                             }
                         }
 
                         
                         &[class~="login"]{
-                            @include imgAddNav('../img/login.png', 15);
+                            @include imgAddNav('/img/login.png', 15);
                             -webkit-transition: all 900ms ease;
                             -o-transition-property: all;
                             &:hover{
@@ -109,7 +117,7 @@ h1,h2,h3,h4,h5,p{
                         }
 
                         &[class~="sign-in"]{
-                            @include imgAddNav('../img/sign-in.png', 15);
+                            @include imgAddNav('/img/sign-in.png', 15);
                             -webkit-transition: all 900ms ease;
                             -o-transition-property: all;
                             &:hover{
@@ -160,7 +168,7 @@ h1,h2,h3,h4,h5,p{
                     width: 400px;
                     padding-left: 35px;
                     outline: 0;
-                    background-image: url('../img/searchx50.png');
+                    background-image: url('/img/searchx50.png');
                     background-size: 27px;
                     background-repeat: no-repeat;
                     background-position: 5px;
