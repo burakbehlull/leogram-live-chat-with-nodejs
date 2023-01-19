@@ -252,6 +252,53 @@ h1, h2, h3, h4, h5, p {
     padding-top: 23px;
   }
 }
+.container .dashboard .auth-body .auth-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .dashboard .auth-body .auth-box .auth-form {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  margin-right: 150px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.container .dashboard .auth-body .auth-box .auth-form h2 {
+  text-align: center;
+  font-size: 50px;
+  padding-right: 35px;
+}
+.container .dashboard .auth-body .auth-box .auth-form form input {
+  display: block;
+  border: 1px solid #21d0e7;
+  border-radius: 5px;
+  margin: 5px;
+  padding-left: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 20px;
+  outline: 0;
+}
+.container .dashboard .auth-body .auth-box .auth-form form input:focus {
+  box-shadow: 1px 0px 13px #6ca2f1;
+  border-color: #21d0e7;
+}
+.container .dashboard .auth-body .auth-box .auth-form form h4 {
+  padding: 15px;
+  font-weight: 400;
+}
+.container .dashboard .auth-body .auth-box .auth-form form button {
+  margin-left: 5px;
+  margin-top: 10px;
+  padding: 11px;
+  background-color: #21d0e7;
+  border-radius: 5px;
+  color: #F2F2F2;
+  cursor: pointer;
+}
 .container .dashboard .features {
   padding-top: 30px;
 }

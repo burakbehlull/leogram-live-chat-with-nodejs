@@ -23,8 +23,15 @@ exports.getIndex = (req, res)=>{
   })
 }
 
-exports.about = (req, res) =>{
+exports.signin = (req, res) =>{
 res.render('index',{
     page: 'authPages/sign-in'
 });
 }
+
+
+exports.login = (req, res) =>{
+  res.render('index',{
+      page: 'authPages/login'
+  });
+  }

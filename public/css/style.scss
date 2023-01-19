@@ -30,6 +30,7 @@ h1,h2,h3,h4,h5,p{
         flex: 80%;
         @import 'pages/dashboard-header';
         @import 'pages/dashboard-body';
+        @import 'pages/authPages/authStyles.scss';
         @import 'pages/features';
     }
 }
