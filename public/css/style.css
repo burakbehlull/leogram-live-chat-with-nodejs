@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, p {
   display: flex;
 }
 .container .navbar {
+  border-right: 1px solid #F2F2F2;
   flex: 20%;
   justify-content: center;
 }
@@ -34,6 +35,10 @@ h1, h2, h3, h4, h5, p {
 }
 .container .navbar .navbar-buttons {
   padding-top: 55px;
+}
+.container .navbar .navbar-buttons hr {
+  padding-top: 20px;
+  border-bottom: 1px solid #F2F2F2;
 }
 .container .navbar .navbar-buttons ul {
   padding-top: 10px;
@@ -84,6 +89,40 @@ h1, h2, h3, h4, h5, p {
 .container .navbar .navbar-buttons ul li a[class~=about]:hover {
   background-image: url("../img/info-red.png");
 }
+.container .navbar .navbar-buttons ul li a[class~=logout] {
+  background-image: url("../img/logout.png");
+  background-repeat: no-repeat;
+  background-size: 15;
+  background-position: left;
+  -webkit-transition: all 900ms ease;
+  -o-transition-property: all;
+}
+.container .navbar .navbar-buttons ul li a[class~=logout]:hover {
+  background-image: url("../img/logoutHover.png");
+  background-size: 40px;
+}
+.container .navbar .navbar-buttons ul li a[class~=login] {
+  background-image: url("../img/login.png");
+  background-repeat: no-repeat;
+  background-size: 15;
+  background-position: left;
+  -webkit-transition: all 900ms ease;
+  -o-transition-property: all;
+}
+.container .navbar .navbar-buttons ul li a[class~=login]:hover {
+  background-size: 40px;
+}
+.container .navbar .navbar-buttons ul li a[class~=sign-in] {
+  background-image: url("../img/sign-in.png");
+  background-repeat: no-repeat;
+  background-size: 15;
+  background-position: left;
+  -webkit-transition: all 900ms ease;
+  -o-transition-property: all;
+}
+.container .navbar .navbar-buttons ul li a[class~=sign-in]:hover {
+  background-size: 40px;
+}
 .container .navbar .navbar-buttons ul li a[class~=active] {
   border-left: 4px solid #d82215;
   border-radius: 2px;
@@ -123,7 +162,18 @@ h1, h2, h3, h4, h5, p {
   border-color: #FFFFFF;
   box-shadow: 1px 0px 15px #6ca2f1;
 }
-.container .dashboard .dashboard-header .profile-part .profile img {
+.container .dashboard .dashboard-header .profile-part {
+  display: flex;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.container .dashboard .dashboard-header .profile-part h3 {
+  font-weight: 400;
+  font-size: 15px;
+  padding-right: 16px;
+  padding-bottom: 3px;
+}
+.container .dashboard .dashboard-header .profile-part .profile img[id~=user-profile] {
   border: 3px solid #091322;
   border-radius: 30px;
   max-width: 50px;

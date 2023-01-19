@@ -22,6 +22,7 @@ h1,h2,h3,h4,h5,p{
 .container{
     display: flex;
     .navbar{
+        border-right: 1px solid #F2F2F2;
         flex: 20%;
         justify-content: center;
         h1{
@@ -42,9 +43,14 @@ h1,h2,h3,h4,h5,p{
 
         .navbar-buttons{
             padding-top: 55px;
+            hr{
+                padding-top: 20px;
+                border-bottom: 1px solid #F2F2F2;;
+            }
             ul{
                 padding-top: 10px;
                 list-style-type: none;
+                
                 li{
                     padding-top: 30px;
 
@@ -79,6 +85,35 @@ h1,h2,h3,h4,h5,p{
                             -o-transition-property: all;
                             &:hover{
                                 background-image: url('../img/info-red.png');
+                            }
+                        }
+
+                        &[class~="logout"]{
+                            @include imgAddNav('../img/logout.png', 15);
+                            -webkit-transition: all 900ms ease;
+                            -o-transition-property: all;
+                            &:hover{
+                                background-image: url('../img/logoutHover.png');
+                                background-size: 40px;
+                            }
+                        }
+
+                        
+                        &[class~="login"]{
+                            @include imgAddNav('../img/login.png', 15);
+                            -webkit-transition: all 900ms ease;
+                            -o-transition-property: all;
+                            &:hover{
+                                background-size: 40px;
+                            }
+                        }
+
+                        &[class~="sign-in"]{
+                            @include imgAddNav('../img/sign-in.png', 15);
+                            -webkit-transition: all 900ms ease;
+                            -o-transition-property: all;
+                            &:hover{
+                                background-size: 40px;
                             }
                         }
 
@@ -137,10 +172,20 @@ h1,h2,h3,h4,h5,p{
                 }
             }
             .profile-part{
+                display: flex;
+                justify-content: inherit;
+                align-items: inherit;
+                h3{
+                    font-weight: 400;
+                    font-size: 15px;
+                    padding-right: 16px;
+                    padding-bottom: 3px;
+                }
                 .profile{
                     
+
                     
-                    img{
+                    img[id~="user-profile"]{
                         border: 3px solid #091322;
                         border-radius: 30px;
                         max-width: 50px;
@@ -185,6 +230,7 @@ h1,h2,h3,h4,h5,p{
                     ul{
                         list-style-type: none;
                         padding-top: 70px;
+                        
                         li{
                             a{
                                 border-radius: 16px;
