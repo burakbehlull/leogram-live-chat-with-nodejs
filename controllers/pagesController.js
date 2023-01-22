@@ -22,6 +22,7 @@ exports.getIndex = async (req, res)=>{
   const user = await User.findOne({ _id: req.session.userID });
   res.render('index',{
     page: "home",
+    page_name: "home",
     featuresTemp,
     user
   })
@@ -31,6 +32,7 @@ exports.signin = async (req, res) =>{
   const user = await User.findOne({ _id: req.session.userID });
 res.render('index',{
     page: 'authPages/sign-in',
+    page_name: "signin",
     user
 });
 }
@@ -40,6 +42,7 @@ exports.login = async (req, res) =>{
   const user = await User.findOne({ _id: req.session.userID });
   res.render('index',{
       page: 'authPages/login',
+      page_name: "login",
       user
   });
   }

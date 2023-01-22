@@ -7,7 +7,7 @@ const app = express()
 
 const pagesRoute = require('./routers/pagesRoute.js')
 const authRoute = require('./routers/authRoute')
-const mongoDbURL = ''
+const mongoDbURL = 'mongodb+srv://burak:123@cluster0.qfxqba3.mongodb.net/chatapp?retryWrites=true&w=majority'
 mongoose
   .connect(
     mongoDbURL

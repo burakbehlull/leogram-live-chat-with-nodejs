@@ -4,16 +4,23 @@
     <div class="navbar-buttons">
       <h4>Navigation</h4>
       <ul>
-        <li><a href="/" class="home active">Anasayfa</a></li>
-        <li><a href="/chat" class="chat">Chat</a></li>
-        <li><a href="/soon" class="cupcake">Yakında..</a></li>
-        <li><a href="/about" class="about">Hakkında</a></li>
+        <% if(!userIN) { %>
+          <li><a href="/" class="home <%= page_name ==='home' && 'active' %>">Anasayfa</a></li>
+          <li><a href="/soon" class="cupcake <%= page_name ==='cupcake' && 'active' %>">Yakında..</a></li>
+          <li><a href="/about" class="about <%= page_name ==='about' && 'active' %>">Hakkında</a></li>
+          <% } else { %>
+            <li><a href="/chat" class="chat <%= page_name ==='chat' && 'active' %>">Chat</a></li>
+        <% } %>
     </ul>
     <hr>
     <ul>
-          <li><a href="/login" class="login">Login</a></li>
-          <li><a href="/sign-in" class="sign-in">Sign-in</a></li>
+        <% if(userIN) { %>
           <li><a href="/accounts/logout" class="logout">Logout</a></li>
+
+        <% } else { %>
+            <li><a href="/login" class="login <%= page_name ==='login' && 'active' %>">Login</a></li>
+            <li><a href="/sign-in" class="sign-in <%= page_name ==='signin' && 'active' %>">Sign-in</a></li>
+        <% } %>
 
       </ul>
     </div>

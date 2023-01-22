@@ -35,23 +35,23 @@
                     font-weight: 400;
                     background-size: 35px;
                     &[class~="home"] {
-                        @include imgAddNav('/img/dashicon.png', 15);
+                        @include imgAddNav('/img/icons/dashicon.png', 15);
                         -webkit-transition: all 900ms ease;
                         -o-transition-property: all;
                         &:hover{
-                            background-image: url('/img/dashiconHover.png');
+                            background-image: url('/img/icons/dashiconHover.png');
                         }
                     }
                     &[class~="chat"]{
-                        @include imgAddNav('/img/chat-inherit.png', 15);
+                        @include imgAddNav('/img/icons/chat-inherit.png', 15);
                         -webkit-transition: all 900ms ease;
                         -o-transition-property: all;
                         &:hover{
-                            background-image: url('/img/chat-red.png');
+                            background-image: url('/img/icons/chat-red.png');
                         }
                     }
                     &[class~="cupcake"]{
-                        @include imgAddNav('/img/cupcake.png', 15);
+                        @include imgAddNav('/img/icons/cupcake.png', 15);
                         -webkit-transition: all 900ms ease;
                         -o-transition-property: all;
                         &:hover{
@@ -60,27 +60,27 @@
                     }
 
                     &[class~="about"]{
-                        @include imgAddNav('/img/info-dark.png', 15);
+                        @include imgAddNav('/img/icons/info-dark.png', 15);
                         -webkit-transition: all 900ms ease;
                         -o-transition-property: all;
                         &:hover{
-                            background-image: url('/img/info-red.png');
+                            background-image: url('/img/icons/info-red.png');
                         }
                     }
 
                     &[class~="logout"]{
-                        @include imgAddNav('/img/logout.png', 15);
+                        @include imgAddNav('/img/icons/logout.png', 15);
                         -webkit-transition: all 900ms ease;
                         -o-transition-property: all;
                         &:hover{
-                            background-image: url('/img/logoutHover.png');
+                            background-image: url('/img/icons/logoutHover.png');
                             background-size: 40px;
                         }
                     }
 
                     
                     &[class~="login"]{
-                        @include imgAddNav('/img/login.png', 15);
+                        @include imgAddNav('/img/icons/login.png', 15);
                         -webkit-transition: all 900ms ease;
                         -o-transition-property: all;
                         &:hover{
@@ -89,7 +89,7 @@
                     }
 
                     &[class~="sign-in"]{
-                        @include imgAddNav('/img/sign-in.png', 15);
+                        @include imgAddNav('/img/icons/sign-in.png', 15);
                         -webkit-transition: all 900ms ease;
                         -o-transition-property: all;
                         &:hover{
