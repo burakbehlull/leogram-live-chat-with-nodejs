@@ -1,3 +1,5 @@
+const session = require('express-session')
+const User = require('../models/User')
 const featuresTemp=[{
 "baslik":"xd",
 "kucuk-baslik":"",
@@ -16,22 +18,28 @@ const featuresTemp=[{
   "image":"testimg.png"
 }]
 
-exports.getIndex = (req, res)=>{
+exports.getIndex = async (req, res)=>{
+  const user = await User.findOne({ _id: req.session.userID });
   res.render('index',{
     page: "home",
-    featuresTemp
+    featuresTemp,
+    user
   })
 }
 
-exports.signin = (req, res) =>{
+exports.signin = async (req, res) =>{
+  const user = await User.findOne({ _id: req.session.userID });
 res.render('index',{
-    page: 'authPages/sign-in'
+    page: 'authPages/sign-in',
+    user
 });
 }
 
 
-exports.login = (req, res) =>{
+exports.login = async (req, res) =>{
+  const user = await User.findOne({ _id: req.session.userID });
   res.render('index',{
-      page: 'authPages/login'
+      page: 'authPages/login',
+      user
   });
   }

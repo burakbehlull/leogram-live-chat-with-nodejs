@@ -4,7 +4,14 @@
     </form>
 
     <div class="profile-part">
-      <h3>Léon</h3>
+      <% if (user) { %>
+        <h3><%= user.username %></h3>
+      
+      <% } else { %>
+        <h3>Giriş Yapınız.</h3>
+      <% } %>
+       
+      
       <div class="profile">
           <img src="/img/testimg.png" alt="user profile" id="user-profile">
       </div>
