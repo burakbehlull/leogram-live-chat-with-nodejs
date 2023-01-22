@@ -1,21 +1,21 @@
 const session = require('express-session')
 const User = require('../models/User')
 const featuresTemp=[{
-"baslik":"xd",
-"kucuk-baslik":"",
-"image":"cupcake.png"
+"baslik":"Daha Güvenli",
+"kucukbaslik":"Hiçbir mesajınız kayıt altına alınmaz.",
+"image":"dia.png"
 },{
-  "baslik":"asdad",
-  "kucuk-baslik":"",
-  "image":"chat-red.png"
+  "baslik":"Cupcake Keyfi",
+  "kucukbaslik":"Yazıştıkça Cupcake kazanın!",
+  "image":"cupcakeHeart.png"
 },{
-  "baslik":"asdsasdsaada",
-  "kucuk-baslik":"",
-  "image":"dash-dark.png"
+  "baslik":"Aşkın Chat'i",
+  "kucukbaslik":"Aşkınızı Yazışarak Pekiştirin",
+  "image":"love-chat.png"
 },{
-  "baslik":"asdasdaasda",
-  "kucuk-baslik":"",
-  "image":"testimg.png"
+  "baslik":"Süpriz Hediyeler!",
+  "kucukbaslik":"Ummadığınız bir anda süpriz hediyeler kazanabilirsiinz!",
+  "image":"gift.png"
 }]
 
 exports.getIndex = async (req, res)=>{

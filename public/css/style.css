@@ -237,21 +237,6 @@ h1, h2, h3, h4, h5, p {
   background-color: #b8241a;
   border-radius: 26px;
 }
-@media only screen and (max-width: 1000px) {
-  .container .dashboard .dashboard-body .header-img .header-text {
-    position: relative;
-  }
-  .container .dashboard .dashboard-body .header-img .header-text h1 {
-    font-size: 40px;
-    color: white;
-    padding-top: 30px;
-    margin-right: 400px;
-  }
-  .container .dashboard .dashboard-body .header-img .header-text ul {
-    margin-right: 400px;
-    padding-top: 23px;
-  }
-}
 .container .dashboard .auth-body .auth-box {
   display: flex;
   justify-content: center;
@@ -309,10 +294,11 @@ h1, h2, h3, h4, h5, p {
   gap: 25px;
 }
 .container .dashboard .features .features-boxes .features-box {
-  padding: 24px;
+  padding-left: 15px;
+  padding-top: 10px;
   border-radius: 10px;
-  height: 130px;
-  width: 230px;
+  height: 135px;
+  width: 225px;
   background-color: #F2F2F2;
 }
 .container .dashboard .features .features-boxes .features-box img {
@@ -321,5 +307,6 @@ h1, h2, h3, h4, h5, p {
   max-width: 40px;
 }
 .container .dashboard .features .features-boxes .features-box h3, .container .dashboard .features .features-boxes .features-box p {
+  padding-top: 5px;
   text-align: left;
 }/*# sourceMappingURL=style.css.map */
