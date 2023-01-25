@@ -5,6 +5,9 @@ const flash = require("connect-flash");
 const MongoStore = require("connect-mongo");
 const app = express()
 
+
+
+
 const pagesRoute = require('./routers/pagesRoute.js')
 const authRoute = require('./routers/authRoute')
 const mongoDbURL = ''
@@ -38,6 +41,7 @@ app.use('*',(req,res,next)=>{
   userIN = req.session.userID;
   next()
 })
+
 app.use(pagesRoute)
 app.use(authRoute)
 
@@ -45,3 +49,4 @@ app.use(authRoute)
 app.listen(80, ()=>{
   console.log('Çalıştı.')
 })
+

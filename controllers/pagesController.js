@@ -46,3 +46,13 @@ exports.login = async (req, res) =>{
       user
   });
   }
+
+
+exports.chatPage = async (req, res) =>{
+    const user = await User.findOne({ _id: req.session.userID });
+    res.render('index',{
+        page: 'chat/chat',
+        page_name: "chat",
+        user
+    });
+    }
