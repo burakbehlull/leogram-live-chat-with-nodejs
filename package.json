@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/31000s/leogram-live-chat-with-nodejs.git"
+    "url": "git+https://github.com/iambuvak/leogram-live-chat-with-nodejs.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/31000s/leogram-live-chat-with-nodejs/issues"
+    "url": "https://github.com/iambuvak/leogram-live-chat-with-nodejs/issues"
   },
-  "homepage": "https://github.com/31000s/leogram-live-chat-with-nodejs/#readme",
-  "author": "31000s <burakyabgu@gmail.com>",
+  "homepage": "https://github.com/iambuvak/leogram-live-chat-with-nodejs/#readme",
+  "author": "iambuvak <burakyabgu@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -25,7 +25,7 @@
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "mongoose": "^6.7.2",
-    "socket.io": "^4.5.4"
+    "socket.io": "^4.6.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

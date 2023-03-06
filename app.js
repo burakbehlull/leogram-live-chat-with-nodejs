@@ -1,16 +1,18 @@
-const express = require('express')
 const mongoose = require("mongoose");
 const session = require("express-session");
 const flash = require("connect-flash");
 const MongoStore = require("connect-mongo");
-const app = express()
 
-
-
+const express = require('express');
+const socket = require('socket.io');
+const app = express();
+const server = app.listen(3000)
 
 const pagesRoute = require('./routers/pagesRoute.js')
 const authRoute = require('./routers/authRoute')
-const mongoDbURL = ''
+
+const mongoDbURL = 'mongodb+srv://burak:123@cluster0.qfxqba3.mongodb.net/?retryWrites=true&w=majority'
+
 mongoose
   .connect(
     mongoDbURL
@@ -45,8 +47,15 @@ app.use('*',(req,res,next)=>{
 app.use(pagesRoute)
 app.use(authRoute)
 
+const io = socket(server)
 
-app.listen(80, ()=>{
-  console.log('Çalıştı.')
-})
+io.on('connection', (socket) => {
+  console.log('Bir kullanıcı sunucuya bağlandı.');
+
+  socket.on('disconnect', () => {
+    console.log('Bir kullanıcı sunucudan ayrıldı.');
+  });
+});
+
+
 

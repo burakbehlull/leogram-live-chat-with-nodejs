@@ -3,6 +3,10 @@
   <head>
     <%- include('partials/_head.ejs') %> 
   </head>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+      var socket = io();
+  </script>
   <body>
     
       <div class="container">
@@ -11,6 +15,8 @@
           <%- include('pages/dashboard-header.ejs') %> 
           <%- include(page) %>
         </div><!-- dashboard -->
+
       </div><!-- container -->
+
   </body>
 </html>
