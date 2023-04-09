@@ -51,7 +51,6 @@ const io = socket(server)
 
 io.on('connection', (socket) => {
   console.log('Bir kullanıcı sunucuya bağlandı.', socket.id);
-  console.log(process.env.XD);
 
   socket.on('disconnect', () => {
     console.log('Bir kullanıcı sunucudan ayrıldı.');
