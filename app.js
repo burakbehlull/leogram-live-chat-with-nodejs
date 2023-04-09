@@ -1,25 +1,25 @@
-const mongoose = require("mongoose");
+const dotenv = require('dotenv')
+dotenv.config()
 const session = require("express-session");
-const flash = require("connect-flash");
+const mongoose = require("mongoose");
 const MongoStore = require("connect-mongo");
+const flash = require("connect-flash");
 
 const express = require('express');
 const socket = require('socket.io');
 const app = express();
-const server = app.listen(3000)
+const server = app.listen(process.env.PORT)
+
+const { MONGODB_URL } = require('./config.json')
 
 const pagesRoute = require('./routers/pagesRoute.js')
 const authRoute = require('./routers/authRoute')
 
-const mongoDbURL = 'mongodb+srv://burak:123@cluster0.qfxqba3.mongodb.net/?retryWrites=true&w=majority'
-
-mongoose
-  .connect(
-    mongoDbURL
-  )
+mongoose.connect(MONGODB_URL)
   .then(() => {
     console.log("Veritabanına bağlandı.");
   });
+
 app.set('view engine', 'ejs')
 global.userIN = null;
 app.use(express.static('public'))
@@ -33,7 +33,7 @@ app.use(
     saveUninitialized: true,
     store: MongoStore.create({
       mongoUrl:
-        mongoDbURL,
+        MONGODB_URL,
       collectionName: "Sessions"
       }),
   })
@@ -50,11 +50,16 @@ app.use(authRoute)
 const io = socket(server)
 
 io.on('connection', (socket) => {
-  console.log('Bir kullanıcı sunucuya bağlandı.');
+  console.log('Bir kullanıcı sunucuya bağlandı.', socket.id);
+  console.log(process.env.XD);
 
   socket.on('disconnect', () => {
     console.log('Bir kullanıcı sunucudan ayrıldı.');
   });
+
+  socket.on('chat', data=>{
+    io.sockets.emit('chat', data)
+  })
 });
 
 
