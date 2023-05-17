@@ -201,9 +201,6 @@ h1, h2, h3, h4, h5, p {
   border-radius: 15px;
   background-color: #091322;
 }
-.container .dashboard .dashboard-body .header-img .header-text {
-  position: fixed;
-}
 .container .dashboard .dashboard-body .header-img .header-text p, .container .dashboard .dashboard-body .header-img .header-text h1 {
   margin-right: 580px;
 }
