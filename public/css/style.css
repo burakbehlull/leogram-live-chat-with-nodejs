@@ -13,6 +13,8 @@ body {
   padding-left: 35px;
   padding-right: 35px;
   background-color: white;
+  height: 100%;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -21,6 +23,8 @@ h1, h2, h3, h4, h5, p {
 
 .container {
   display: flex;
+  height: 100%;
+  width: 100%;
 }
 .container .navbar {
   border-right: 1px solid #F2F2F2;
@@ -148,6 +152,7 @@ h1, h2, h3, h4, h5, p {
   margin-right: 30px;
   margin-left: 30px;
   flex: 80%;
+  width: 100%;
 }
 .container .dashboard .dashboard-header {
   display: flex;
@@ -306,4 +311,66 @@ h1, h2, h3, h4, h5, p {
 .container .dashboard .features .features-boxes .features-box h3, .container .dashboard .features .features-boxes .features-box p {
   padding-top: 5px;
   text-align: left;
+}
+.container .dashboard .chat {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .dashboard .chat .chat-place {
+  flex: 80%;
+}
+.container .dashboard .chat .chat-place ul {
+  list-style-type: none;
+}
+.container .dashboard .chat .chat-place ul li {
+  display: flex;
+  border: 1px solid #b6a9a9;
+  flex-direction: row-reverse;
+  justify-content: start;
+  gap: 5px;
+  margin: 17px;
+  padding: 6px;
+  border-radius: 20px;
+  font-size: 15px;
+  color: #070606;
+}
+.container .dashboard .chat .chat-place ul li .span {
+  display: inline-block;
+  font-weight: 500;
+}
+.container .dashboard .chat .chat-input {
+  flex: 20%;
+}
+.container .dashboard .chat .chat-input form {
+  display: flex;
+  justify-content: start;
+  align-self: center;
+  text-align: center;
+  padding-top: 1.4em;
+  padding: 5px;
+}
+.container .dashboard .chat .chat-input form .message-input {
+  width: 100%;
+  outline: 0;
+  border: none;
+  font-size: 1.3em;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid #d1caca;
+}
+.container .dashboard .chat .chat-input form .message-input:hover {
+  border-color: #b8aeae;
+}
+.container .dashboard .chat .chat-input form .messageBtn {
+  margin-left: 5px;
+  padding: 12px 28px;
+  background-color: #dad5d5;
+  color: white;
+  border-radius: 15px;
+}
+.container .dashboard .chat .chat-input form .messageBtn:hover {
+  background-color: #b6a9a9;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

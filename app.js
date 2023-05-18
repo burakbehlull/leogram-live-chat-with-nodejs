@@ -49,16 +49,29 @@ app.use(authRoute)
 
 const io = socket(server)
 
-io.on('connection', (socket) => {
-  console.log('Bir kullanıcı sunucuya bağlandı.', socket.id);
+// io.on('connection', (socket) => {
+//   console.log('Bir kullanıcı sunucuya bağlandı.', socket.id);
 
-  socket.on('disconnect', () => {
-    console.log('Bir kullanıcı sunucudan ayrıldı.');
+//   socket.on('disconnect', () => {
+//     console.log('Bir kullanıcı sunucudan ayrıldı.');
+//   });
+
+//   socket.on('chat', data=>{
+//     io.sockets.emit('chat', data)
+//   })
+// });
+
+io.on('connection', (socket) => {
+  console.log('Bir istemci bağlandı');
+
+  socket.on('chat message', (msg) => {
+    console.log('Mesaj alındı:', msg);
+    io.emit('chat message', msg);
   });
 
-  socket.on('chat', data=>{
-    io.sockets.emit('chat', data)
-  })
+  socket.on('disconnect', () => {
+    console.log('Bir istemci ayrıldı');
+  });
 });
 
 

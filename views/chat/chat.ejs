@@ -1,6 +1,39 @@
 <div class="chat">
+    <div class="chat-place">
+        <ul id="messages">
+        </ul>
+    </div>
 
-    <input type="text" >
-    <input type="text">
-    <button type="button">GÖNDER</button>
+    <div class="chat-input">
+        <form id="chat-form">
+            <input type="text" id="message-input" class="message-input" placeholder="Mesaj Gönderin..">
+            <button type="submit" class="messageBtn">Gönder</button>
+        </form>
+    </div>
+
+       
+    
+      <script src="/socket.io/socket.io.js"></script>
+      <script>
+        const socket = io();
+                socket.on('chat message', (msg) => {
+                        const li = document.createElement('li');
+                        const usernameTag = document.createElement('span')
+                        
+                        li.textContent = msg;
+                        li.appendChild(usernameTag)
+                        usernameTag.innerHTML = `<span><%= user.username %> - </span>`
+                        document.getElementById('messages').appendChild(li);
+
+                });
+            
+                document.getElementById('chat-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const messageInput = document.getElementById('message-input');
+            
+                const message = messageInput.value;
+                socket.emit('chat message', message);
+                messageInput.value = '';
+        });
+      </script>
 </div>

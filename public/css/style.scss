@@ -14,24 +14,32 @@ body{
     padding-left: 35px;
     padding-right: 35px;
     background-color: white;
+    height: 100%;
+    width: 100%;
 }
 
 h1,h2,h3,h4,h5,p{
     color: #091322;
 }
 
+
 .container{
     display: flex;
-
+    height: 100%;
+    width: 100%;
+    
     @import 'layout/navbar';
     .dashboard{
         margin-right: 30px;
         margin-left: 30px;
         flex: 80%;
+        // height: 100%;
+        width: 100%;
         @import 'pages/dashboard-header';
         @import 'pages/dashboard-body';
         @import 'pages/authPages/authStyles.scss';
         @import 'pages/features';
+        @import 'pages/chat';
     }
 }
 
